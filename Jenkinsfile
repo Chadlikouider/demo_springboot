@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('GetProject') {
             steps {
-                git branch:'main', url:'https://github.com/Chadlikouider/CT5171_test1Maven.git'
+                git branch:'main', url:'https://github.com/Chadlikouider/demo_springboot.git'
             }
         }
         stage ('build') {
@@ -30,7 +30,7 @@ pipeline {
     post{
      success{
          archiveArtifacts allowEmptyArchive: true,
-             artifacts:'**/CT5171_test1maven*.jar'
+             artifacts:'**/demo_springboot*.jar'
      }   
     }
 }
