@@ -21,11 +21,6 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        stage ('Exec') {
-            steps {
-                sh 'mvn exec:java'
-            }
-        }
     }
     post{
      success{
