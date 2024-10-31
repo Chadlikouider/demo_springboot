@@ -25,7 +25,7 @@ pipeline {
     post{
      success{
          archiveArtifacts allowEmptyArchive: true,
-             artifacts:'**/demo_springboot*.jar'
+             artifacts:'**/demo_springboot*.war'
      }   
     }
 }
